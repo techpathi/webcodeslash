@@ -1,0 +1,77 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.theme-light {
+  --color-primary: #0060df;
+  --color-secondary: #fbfbfe;
+  --color-accent: #574475;
+  --font-color: #000000;
+}
+
+.theme-dark {
+  --color-primary: #17ed90;
+  --color-secondary: #243133;
+  --color-accent: #2E355C;
+  --font-color: #ffffff;
+}
+
+.home-container {
+  background: var(--color-secondary);
+}
+
+.home-container header {
+  color: var(--font-color);
+}
+
+.paneTitle {
+  font-size: medium;
+  background: var(--color-secondary);
+  color: var(--font-color);
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5em;
+}
+
+.Resizer {
+  z-index: 10000;
+  box-sizing: border-box;
+  background-clip: padding-box;
+}
+
+.Resizer:hover {
+  transition: all 2s ease;
+  border: 10px solid var(--color-accent);
+}
+
+.Resizer.horizontal {
+  height: 11px;
+  margin: -5px 0;
+  cursor: row-resize;
+  width: 100%;
+  border: 8px solid var(--color-accent);
+}
+
+.Resizer.vertical {
+  margin: 0 -5px;
+  cursor: col-resize;
+  border: 8px solid var(--color-accent);
+}
+
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+
+.Resizer.disabled:hover {
+  border-color: transparent;
+}

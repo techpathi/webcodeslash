@@ -1,0 +1,17 @@
+.code-editor {
+    height: 100%;
+}
+
+.controls-row button {
+    margin: 0.5em 1em 0.5em 1em;
+    float: right;
+}
+
+@media screen and (max-width: 768px) {
+    .controls-row {
+        float: right;
+    }
+    .controls-row button {
+        margin: 0.5em;
+    }
+}
